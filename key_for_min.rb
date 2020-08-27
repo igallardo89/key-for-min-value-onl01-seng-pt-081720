@@ -4,9 +4,10 @@ veggies = {"apple" => -45, "banana" => -44.5, "carrot" => -44.9}
 
 
 
-def key_for_min_value(ikea)
-  nu = ""
-  ikea.sort_by { |key, value| key }.first
+def key_for_min_value(hash)
+   nu = ""
+   
+  hash.sort_by { |key, value| key }.first
 
   end
  
