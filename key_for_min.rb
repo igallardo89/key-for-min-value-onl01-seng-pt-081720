@@ -5,14 +5,14 @@ veggies = {"apple" => -45, "banana" => -44.5, "carrot" => -44.9}
 
 
 def key_for_min_value(ikea)
-    nikea.reduce([nil, nil]){
-        |x, (key, value)|
-        if x[0].nil?
+    ikea.reduce([nil, nil]){
+        |acc, (key, value)|
+        if acc[0].nil?
             [key, value]
-        elsif x[1] > value
+        elsif acc[1] > value
             [key, value]
         else
-            x
+            acc
         end
     }.first
 
